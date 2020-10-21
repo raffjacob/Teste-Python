@@ -1,4 +1,4 @@
-import csv, json, codecs
+import csv, json
 
 csvDir = '.\intern-python-test-main\csv\shopping.csv'
 jsonDir = '.\intern-python-test-main\gerados\convertido.json'
@@ -7,8 +7,8 @@ dados = {}
 order = {}
 
 # Leitura do arquivo CSV
-with open(csvDir, 'r') as CsvFile:
-    csvReader = csv.DictReader(CsvFile, delimiter = "|")
+with open(csvDir, 'r') as csvFile:
+    csvReader = csv.DictReader(csvFile, delimiter = "|")
     calc = 0
     total = 0
     for linha in csvReader:
@@ -19,9 +19,9 @@ with open(csvDir, 'r') as CsvFile:
         total += calc
     dados["Total"] = total 
     order["order"] = dados    
-CsvFile.close
+csvFile.close
 
 # Criação do arquivo JSON
-with open(jsonDir, 'w', encoding="utf-8") as JsonFile:
-    JsonFile.write(json.dumps(order, indent=4))
-JsonFile.close
+with open(jsonDir, 'w', encoding="utf-8") as jsonFile:
+    jsonFile.write(json.dumps(order, indent=4))
+jsonFile.close

@@ -10,13 +10,13 @@ jsonFile.close
 
 # Escrita do arquivo CSV
 with open(csvDir, "w") as csvFile:
-    csv_csvFile = csv.writer(csvFile, delimiter = "|")
-    csv_csvFile.writerow(["id", "name", "description", "quantity", "value", "total"])
+    csvWriter = csv.writer(csvFile, delimiter = "|")
+    csvWriter.writerow(["id", "name", "description", "quantity", "value", "total"])
     total = 0
     for item in dados["order"]:
         # Cálculo de total e criação das linhas
         item['total'] = item['quantity'] * item['value']
-        csv_csvFile.writerow([item['id'], item['name'], item['description'], item['quantity'], item['value'], item['total']])    
+        csvWriter.writerow([item['id'], item['name'], item['description'], item['quantity'], item['value'], item['total']])    
         total += item['total']
-    csv_csvFile.writerow(["Total", "", "", "", "", total])
+    csvWriter.writerow(["Total", "", "", "", "", total])
 csvFile.close
