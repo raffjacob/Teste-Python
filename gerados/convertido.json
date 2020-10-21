@@ -1,0 +1,61 @@
+{
+    "order": {
+        "1": {
+            "ID": "1",
+            "Name": "Camisa",
+            "Description": "Camisa Social Preta",
+            "Quantity": "3",
+            "Value": "56.50"
+        },
+        "2": {
+            "ID": "2",
+            "Name": "Regata",
+            "Description": "Regata 100% Algod\u00e3o",
+            "Quantity": "6",
+            "Value": "9.99"
+        },
+        "3": {
+            "ID": "3",
+            "Name": "Saia Rodada",
+            "Description": "Saia Rodada Rosa",
+            "Quantity": "2",
+            "Value": "29.90"
+        },
+        "4": {
+            "ID": "4",
+            "Name": "Meia",
+            "Description": "Meia branca",
+            "Quantity": "3",
+            "Value": "5.00"
+        },
+        "5": {
+            "ID": "5",
+            "Name": "Gorro",
+            "Description": "Gorro Preto",
+            "Quantity": "1",
+            "Value": "12.00"
+        },
+        "6": {
+            "ID": "6",
+            "Name": "Moletom",
+            "Description": "Moletom Adidas",
+            "Quantity": "1",
+            "Value": "119.95"
+        },
+        "7": {
+            "ID": "7",
+            "Name": "Bermuda",
+            "Description": "Bermuda Ciclone",
+            "Quantity": "3",
+            "Value": "35.00"
+        },
+        "8": {
+            "ID": "8",
+            "Name": "T\u00eanis",
+            "Description": "T\u00eanis Nike Shox",
+            "Quantity": "1",
+            "Value": "450.00"
+        },
+        "Total": 991.19
+    }
+}
